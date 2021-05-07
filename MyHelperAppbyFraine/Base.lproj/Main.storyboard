@@ -104,8 +104,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Oops ! That is okay, please hit redo to start over." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZWR-X7-R8T">
+                                <rect key="frame" x="20" y="44" width="374" height="190"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="40"/>
+                                <color key="textColor" red="0.25391683199999998" green="0.076008488669999999" blue="0.44852474619999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SfU-i9-Rkr">
-                                <rect key="frame" x="177" y="534" width="61" height="45"/>
+                                <rect key="frame" x="177" y="382" width="61" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="28"/>
                                 <state key="normal" title="Redo">
@@ -115,13 +122,10 @@
                                     <segue destination="0Sl-zb-xwi" kind="presentation" id="SM7-fc-3lX"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Oops ! That is okay, please hit redo to start over." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZWR-X7-R8T">
-                                <rect key="frame" x="20" y="44" width="374" height="190"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="thebunnies-9" translatesAutoresizingMaskIntoConstraints="NO" id="RlH-s2-G3E">
+                                <rect key="frame" x="-79" y="435" width="473" height="473"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="40"/>
-                                <color key="textColor" red="0.25391683199999998" green="0.076008488669999999" blue="0.44852474619999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="QSf-v5-EUa"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -140,9 +144,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kyk-x7-Ufv">
-                                <rect key="frame" x="304" y="621" width="90" height="60"/>
+                                <rect key="frame" x="211" y="621" width="183" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Restart Entry"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="28"/>
+                                <state key="normal" title="Restart Entry">
+                                    <color key="titleColor" red="0.012808310789999999" green="0.0" blue="0.30278394669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j0p-3g-RZi">
                                 <rect key="frame" x="309" y="41" width="85" height="48"/>
@@ -174,9 +181,15 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDa-hO-MFl">
-                                <rect key="frame" x="24" y="621" width="113" height="58"/>
+                                <rect key="frame" x="24" y="621" width="169" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Confirm Entry "/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="28"/>
+                                <state key="normal" title="Confirm Entry ">
+                                    <color key="titleColor" red="0.012808310789999999" green="0.0" blue="0.30278394669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="gen-M5-wJA" kind="showDetail" id="FoN-e5-Qoc"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2DT-C4-aOY"/>
@@ -232,6 +245,10 @@
                                 <color key="textColor" red="0.25391683199999998" green="0.076008488669999999" blue="0.44852474619999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="thebunnies-11" translatesAutoresizingMaskIntoConstraints="NO" id="g0W-o8-I9u">
+                                <rect key="frame" x="25" y="512" width="346" height="346"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hyU-F0-hsJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -389,7 +406,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M3i-9z-MeK">
-                                <rect key="frame" x="178" y="571" width="67" height="48"/>
+                                <rect key="frame" x="174" y="424" width="67" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="31"/>
                                 <state key="normal" title="Redo">
@@ -399,6 +416,14 @@
                                     <segue destination="Nh8-0F-BzX" kind="presentation" id="dFq-5K-Pkq"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="thebunnies-8" translatesAutoresizingMaskIntoConstraints="NO" id="dcg-MU-PAf">
+                                <rect key="frame" x="-57" y="398" width="572" height="572"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="thebunnies-8" translatesAutoresizingMaskIntoConstraints="NO" id="wYh-N2-q00">
+                                <rect key="frame" x="-47" y="408" width="572" height="572"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="G3M-aw-SA2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -452,6 +477,10 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="thebunnies-10" translatesAutoresizingMaskIntoConstraints="NO" id="Ybi-ec-uV2">
+                                <rect key="frame" x="86" y="596" width="308" height="310"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2fM-o0-Znn"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -459,7 +488,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1bn-V4-5qA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-425" y="137"/>
+            <point key="canvasLocation" x="-426.08695652173918" y="136.60714285714286"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -512,6 +541,46 @@
             </objects>
             <point key="canvasLocation" x="531.8840579710145" y="89.732142857142847"/>
         </scene>
+        <!--View Controller Ten-->
+        <scene sceneID="wZ9-Zd-tCb">
+            <objects>
+                <viewController id="rkG-gp-pQc" customClass="ViewControllerTen" customModule="MyHelperAppbyFraine" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JwK-aq-bDo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WoG-9N-Z4Q">
+                                <rect key="frame" x="20" y="92" width="374" height="337"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">To Resart your entry we are going to send you to our emotion selection page :) Thank you, for using the app and we hope to continue being here for you.</string>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="34"/>
+                                <color key="textColor" red="0.30278394669999997" green="0.059020960900000002" blue="0.27373962410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="thebunnies-1" translatesAutoresizingMaskIntoConstraints="NO" id="okL-mP-XzA">
+                                <rect key="frame" x="20" y="641" width="522" height="426"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FmB-Oq-93p">
+                                <rect key="frame" x="149" y="543" width="117" height="78"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="30"/>
+                                <state key="normal" title="Go Now ">
+                                    <color key="titleColor" red="0.012808310789999999" green="0.0" blue="0.30278394669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="0Sl-zb-xwi" kind="showDetail" id="jGt-d8-IWc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YtO-ad-HmQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Aln-oJ-aaQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2704.347826086957" y="-18.080357142857142"/>
+        </scene>
         <!--View Controller Eight-->
         <scene sceneID="sDt-80-chm">
             <objects>
@@ -549,11 +618,15 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="fud-Sr-IVT"/>
-        <segue reference="SM7-fc-3lX"/>
+        <segue reference="2t0-nD-EHe"/>
+        <segue reference="odw-rM-2J9"/>
+        <segue reference="RQt-g6-GII"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="bunnies-19" width="1500" height="1282"/>
+        <image name="thebunnies-1" width="900" height="900"/>
+        <image name="thebunnies-10" width="1461" height="1464"/>
+        <image name="thebunnies-11" width="1522" height="1478"/>
         <image name="thebunnies-12" width="1489" height="1467"/>
         <image name="thebunnies-13" width="1560" height="1478"/>
         <image name="thebunnies-14" width="1594" height="1409"/>
@@ -565,6 +638,8 @@
         <image name="thebunnies-4" width="1500" height="1501"/>
         <image name="thebunnies-5" width="1501" height="1501"/>
         <image name="thebunnies-6" width="1501" height="1501"/>
+        <image name="thebunnies-8" width="1501" height="1501"/>
+        <image name="thebunnies-9" width="1475" height="1464"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
