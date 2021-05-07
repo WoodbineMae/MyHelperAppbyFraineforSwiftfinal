@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller Two-->
+        <scene sceneID="UuZ-XQ-GXP">
+            <objects>
+                <viewController id="0Sl-zb-xwi" customClass="ViewControllerTwo" customModule="MyHelperAppbyFraine" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2o7-3m-2tb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9eq-bK-Ff3">
+                                <rect key="frame" x="20" y="251" width="150" height="148"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="thebunnies-12"/>
+                                <connections>
+                                    <action selector="happyMoodSelected:" destination="0Sl-zb-xwi" eventType="touchUpInside" id="1du-M7-07H"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pRR-Vb-Zlo">
+                                <rect key="frame" x="20" y="455" width="150" height="148"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="thebunnies-14"/>
+                                <connections>
+                                    <action selector="sadMoodSelected:" destination="0Sl-zb-xwi" eventType="touchUpInside" id="KuL-pB-JsV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zzV-D2-ZvZ">
+                                <rect key="frame" x="213" y="251" width="178" height="148"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="thebunnies-13"/>
+                                <connections>
+                                    <action selector="angryMoodSelected:" destination="0Sl-zb-xwi" eventType="touchUpInside" id="BGe-Lt-mI9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fPr-Fi-WGT">
+                                <rect key="frame" x="216" y="455" width="178" height="148"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="thebunnies-16"/>
+                                <connections>
+                                    <action selector="unsureMoodSelected:" destination="0Sl-zb-xwi" eventType="touchUpInside" id="4Lj-g8-PEi"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please, select the current mood you are feeling." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rxb-5h-Idm">
+                                <rect key="frame" x="20" y="29" width="355" height="174"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="40"/>
+                                <color key="textColor" red="0.25391683199999998" green="0.076008488669999999" blue="0.44852474619999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="30h-Z1-cCY">
+                                <rect key="frame" x="103" y="706" width="38" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="28"/>
+                                <state key="normal" title="Yes">
+                                    <color key="titleColor" red="0.073304688579999999" green="0.035501870939999999" blue="0.46246430840000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Nh8-0F-BzX" kind="presentation" id="fud-Sr-IVT"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U30-td-WYg">
+                                <rect key="frame" x="273" y="706" width="38" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="28"/>
+                                <state key="normal" title="No">
+                                    <color key="titleColor" red="0.073304688579999999" green="0.035501870939999999" blue="0.46246430840000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="eCd-z7-HqW" kind="showDetail" id="DNC-ki-1Oa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="51w-0t-ey2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="iEq-tH-2ob"/>
+                    <connections>
+                        <outlet property="angryMoodButton" destination="zzV-D2-ZvZ" id="ONn-mt-kbl"/>
+                        <outlet property="checkIfMoodIsCorrectLabel" destination="rxb-5h-Idm" id="b1g-hY-2YO"/>
+                        <outlet property="confirmButton" destination="30h-Z1-cCY" id="38w-8V-M7M"/>
+                        <outlet property="denyButton" destination="U30-td-WYg" id="ne4-pX-Das"/>
+                        <outlet property="happyMoodButton" destination="9eq-bK-Ff3" id="7Cu-71-Qnw"/>
+                        <outlet property="sadMoodButton" destination="pRR-Vb-Zlo" id="Y7m-OV-2Xt"/>
+                        <outlet property="unsureMoodButton" destination="fPr-Fi-WGT" id="SYN-fD-ooV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BbR-A7-OHW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="611.59420289855075" y="1155.8035714285713"/>
+        </scene>
+        <!--View Controller Three-->
+        <scene sceneID="0IF-U4-6G0">
+            <objects>
+                <viewController id="eCd-z7-HqW" customClass="ViewControllerThree" customModule="MyHelperAppbyFraine" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v2B-Hf-NhK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SfU-i9-Rkr">
+                                <rect key="frame" x="177" y="534" width="61" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="28"/>
+                                <state key="normal" title="Redo">
+                                    <color key="titleColor" red="0.073304688579999999" green="0.035501870939999999" blue="0.46246430840000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="0Sl-zb-xwi" kind="presentation" id="SM7-fc-3lX"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Oops ! That is okay, please hit redo to start over." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZWR-X7-R8T">
+                                <rect key="frame" x="20" y="44" width="374" height="190"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="40"/>
+                                <color key="textColor" red="0.25391683199999998" green="0.076008488669999999" blue="0.44852474619999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QSf-v5-EUa"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2ef-Fp-hd6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1650.7246376811595" y="1141.7410714285713"/>
+        </scene>
+        <!--View Controller Nine-->
+        <scene sceneID="bVH-wX-XcN">
+            <objects>
+                <viewController id="obH-Fn-074" customClass="ViewControllerNine" customModule="MyHelperAppbyFraine" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Omu-pC-CKH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kyk-x7-Ufv">
+                                <rect key="frame" x="304" y="621" width="90" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Restart Entry"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j0p-3g-RZi">
+                                <rect key="frame" x="309" y="41" width="85" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Enter">
+                                    <color key="titleColor" red="0.012808310789999999" green="0.0" blue="0.30278394669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F00-U5-mvd">
+                                <rect key="frame" x="20" y="147" width="374" height="430"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter Name " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5z-nx-Xll">
+                                <rect key="frame" x="24" y="20" width="240" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter Date " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PCf-ef-YDw">
+                                <rect key="frame" x="24" y="75" width="240" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDa-hO-MFl">
+                                <rect key="frame" x="24" y="621" width="113" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Confirm Entry "/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2DT-C4-aOY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="confirmEntryButton" destination="bDa-hO-MFl" id="kWY-VP-gh6"/>
+                        <outlet property="dateLabel" destination="PCf-ef-YDw" id="pyl-qh-NCs"/>
+                        <outlet property="finalResultButton" destination="j0p-3g-RZi" id="MR4-wP-Lau"/>
+                        <outlet property="nameLabel" destination="b5z-nx-Xll" id="zXr-Ix-ANS"/>
+                        <outlet property="restartEntryButton" destination="Kyk-x7-Ufv" id="dhP-VF-UCE"/>
+                        <outlet property="showResultsLabel" destination="F00-U5-mvd" id="h97-iZ-iAa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lDf-ey-E4o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3175.36231884058" y="724.55357142857144"/>
+        </scene>
+        <!--View Controller Seven-->
+        <scene sceneID="tJC-y0-WxJ">
+            <objects>
+                <viewController id="QaS-YF-bPn" customClass="ViewControllerSeven" customModule="MyHelperAppbyFraine" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sTX-wU-spS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fHN-CW-rPR">
+                                <rect key="frame" x="20" y="604" width="110" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="28"/>
+                                <state key="normal" title="Yes">
+                                    <color key="titleColor" red="0.073304688579999999" green="0.035501870939999999" blue="0.46246430840000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="obH-Fn-074" kind="showDetail" id="K9q-AA-vZu"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zcL-pP-wN1">
+                                <rect key="frame" x="284" y="604" width="110" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="28"/>
+                                <state key="normal" title="No">
+                                    <color key="titleColor" red="0.073304688579999999" green="0.035501870939999999" blue="0.46246430840000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="gen-M5-wJA" kind="presentation" id="2t0-nD-EHe"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Thank you, for completing your journal entry. Do you wish to see your chart ?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ER-ge-iWw">
+                                <rect key="frame" x="25" y="43" width="323" height="326"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="40"/>
+                                <color key="textColor" red="0.25391683199999998" green="0.076008488669999999" blue="0.44852474619999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hyU-F0-hsJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qav-No-7dx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2297.1014492753625" y="774.77678571428567"/>
+        </scene>
+        <!--View Controller Four-->
+        <scene sceneID="1H8-18-bOE">
+            <objects>
+                <viewController id="Nh8-0F-BzX" customClass="ViewControllerFour" customModule="MyHelperAppbyFraine" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CUR-R2-DaH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BtP-gt-y0G">
+                                <rect key="frame" x="123" y="180" width="150" height="148"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="thebunnies-2"/>
+                                <connections>
+                                    <action selector="realtionshipSelected:" destination="Nh8-0F-BzX" eventType="touchUpInside" id="vLa-aU-gwO"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="School" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pJ3-kg-YAZ">
+                                <rect key="frame" x="156" y="522" width="84" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.073304688579999999" green="0.035501870939999999" blue="0.46246430840000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Work" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Otp-ec-hqq">
+                                <rect key="frame" x="156" y="336" width="84" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.073304688579999999" green="0.035501870939999999" blue="0.46246430840000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Money" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cE4-yR-rHL">
+                                <rect key="frame" x="156" y="164" width="84" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.073304688579999999" green="0.035501870939999999" blue="0.46246430840000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2K1-UV-KZv">
+                                <rect key="frame" x="123" y="551" width="150" height="148"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="thebunnies-6"/>
+                                <connections>
+                                    <action selector="unsureSelected:" destination="Nh8-0F-BzX" eventType="touchUpInside" id="2Ml-zC-kxV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Evl-lg-f3d">
+                                <rect key="frame" x="115" y="373" width="150" height="148"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="thebunnies-5"/>
+                                <connections>
+                                    <action selector="workSelected:" destination="Nh8-0F-BzX" eventType="touchUpInside" id="JpF-Ze-A9g"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ye5-OW-4d3">
+                                <rect key="frame" x="123" y="559" width="150" height="148"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="thebunnies-3"/>
+                                <connections>
+                                    <action selector="schoolSelected:" destination="Nh8-0F-BzX" eventType="touchUpInside" id="36w-DW-DVd"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FHe-q0-o2g">
+                                <rect key="frame" x="284" y="745" width="110" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="28"/>
+                                <state key="normal" title="No">
+                                    <color key="titleColor" red="0.073304688579999999" green="0.035501870939999999" blue="0.46246430840000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="WjA-5L-b4K" kind="presentation" id="6nT-wa-aMW"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please select, the reason for the current mood." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jx0-eo-LfV">
+                                <rect key="frame" x="25" y="0.0" width="369" height="172"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="40"/>
+                                <color key="textColor" red="0.25391683199999998" green="0.076008488669999999" blue="0.44852474619999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hNC-vW-fBX">
+                                <rect key="frame" x="20" y="745" width="110" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="28"/>
+                                <state key="normal" title="Yes">
+                                    <color key="titleColor" red="0.073304688579999999" green="0.035501870939999999" blue="0.46246430840000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="QaS-YF-bPn" kind="presentation" id="hW1-4Y-gv8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="INu-Wq-GGW">
+                                <rect key="frame" x="115" y="193" width="150" height="148"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="thebunnies-4"/>
+                                <connections>
+                                    <action selector="moneySelected:" destination="Nh8-0F-BzX" eventType="touchUpInside" id="7jH-SJ-mPG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7OU-PS-ouK">
+                                <rect key="frame" x="118" y="699" width="161" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="22"/>
+                                <state key="normal" title="More Options ">
+                                    <color key="titleColor" red="0.073304688579999999" green="0.035501870939999999" blue="0.46246430840000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="moreOptionsShowOnTap:" destination="Nh8-0F-BzX" eventType="touchUpInside" id="W7u-Ra-jLQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nDE-0e-fNK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="confirmButton" destination="hNC-vW-fBX" id="dLQ-S4-Xvo"/>
+                        <outlet property="denyButton" destination="FHe-q0-o2g" id="pdA-eA-oU8"/>
+                        <outlet property="headerLabel" destination="Jx0-eo-LfV" id="crC-xs-adu"/>
+                        <outlet property="loveReasonButton" destination="BtP-gt-y0G" id="JFV-UR-Aff"/>
+                        <outlet property="moneyReasonButton" destination="INu-Wq-GGW" id="5Ba-iD-JCF"/>
+                        <outlet property="moreOpitionsButton" destination="7OU-PS-ouK" id="O6h-t2-4Hv"/>
+                        <outlet property="reasonOneLabel" destination="cE4-yR-rHL" id="o41-zb-UQu"/>
+                        <outlet property="reasonThreeLabel" destination="pJ3-kg-YAZ" id="eH5-26-PLH"/>
+                        <outlet property="reasonTwoLabel" destination="Otp-ec-hqq" id="HIs-Sf-hwe"/>
+                        <outlet property="schoolReasonButton" destination="ye5-OW-4d3" id="PoI-R9-TRf"/>
+                        <outlet property="unsureReasonButton" destination="2K1-UV-KZv" id="lfA-tD-6n9"/>
+                        <outlet property="workReasonButton" destination="Evl-lg-f3d" id="T6e-oL-JVy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gbH-6F-X4y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1191.304347826087" y="784.82142857142856"/>
+        </scene>
+        <!--View Controller Six-->
+        <scene sceneID="KL4-t1-hi7">
+            <objects>
+                <viewController id="WjA-5L-b4K" customClass="ViewControllerSix" customModule="MyHelperAppbyFraine" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pS0-Sg-Cc9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="That is okay, please hit redo to start over your selection." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Si8-bX-CrA">
+                                <rect key="frame" x="25" y="57" width="369" height="269"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="40"/>
+                                <color key="textColor" red="0.25391683199999998" green="0.076008488669999999" blue="0.44852474619999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M3i-9z-MeK">
+                                <rect key="frame" x="178" y="571" width="67" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="31"/>
+                                <state key="normal" title="Redo">
+                                    <color key="titleColor" red="0.073304688579999999" green="0.035501870939999999" blue="0.46246430840000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Nh8-0F-BzX" kind="presentation" id="dFq-5K-Pkq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="G3M-aw-SA2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="upi-au-7po" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1172.4637681159422" y="1556.9196428571429"/>
+        </scene>
+        <!--View Controller Five-->
+        <scene sceneID="pYL-Pv-aeM">
+            <objects>
+                <viewController id="839-MD-4tS" customClass="ViewControllerFive" customModule="MyHelperAppbyFraine" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NdJ-7S-ZAJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aRa-ss-kgj">
+                                <rect key="frame" x="82" y="568" width="38" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="28"/>
+                                <state key="normal" title="Yes">
+                                    <color key="titleColor" red="0.012808310789999999" green="0.0" blue="0.30278394669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Nh8-0F-BzX" kind="showDetail" id="odw-rM-2J9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cmg-Db-VFI">
+                                <rect key="frame" x="287" y="568" width="38" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="28"/>
+                                <state key="normal" title="No">
+                                    <color key="titleColor" red="0.012808310789999999" green="0.0" blue="0.30278394669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="0Sl-zb-xwi" kind="presentation" id="RQt-g6-GII"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xN9-PC-bQp">
+                                <rect key="frame" x="20" y="54" width="374" height="489"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Have you filled out your journal entry today? ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.27260469543147203" green="0.053138190598915766" blue="0.24645529486688372" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="64" name="HoeflerText-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2fM-o0-Znn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1bn-V4-5qA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-425" y="137"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyHelperAppbyFraine" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfb-nZ-jAS">
+                                <rect key="frame" x="20" y="317" width="222" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="thebunnies-18"/>
+                                <connections>
+                                    <segue destination="839-MD-4tS" kind="showDetail" id="row-To-B5E"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Saf-Ds-juh">
+                                <rect key="frame" x="20" y="606" width="222" height="256"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="thebunnies-17"/>
+                                <connections>
+                                    <segue destination="0Sl-zb-xwi" kind="show" id="0iE-xh-PeJ"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="bunnies-19" translatesAutoresizingMaskIntoConstraints="NO" id="cWk-g4-BM9">
+                                <rect key="frame" x="-225" y="-42" width="696" height="443"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Chart" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z90-UQ-vda">
+                                <rect key="frame" x="49" y="317" width="175" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="33"/>
+                                <color key="textColor" red="0.25391683199999998" green="0.076008488669999999" blue="0.44852474619999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Journal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VI7-Zs-sOC">
+                                <rect key="frame" x="49" y="606" width="175" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="33"/>
+                                <color key="textColor" red="0.25391683199999998" green="0.076008488669999999" blue="0.44852474619999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="531.8840579710145" y="89.732142857142847"/>
+        </scene>
+        <!--View Controller Eight-->
+        <scene sceneID="sDt-80-chm">
+            <objects>
+                <viewController id="gen-M5-wJA" customClass="ViewControllerEight" customModule="MyHelperAppbyFraine" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zyT-I2-Ner">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="bunnies-19" translatesAutoresizingMaskIntoConstraints="NO" id="lNK-kL-kRR">
+                                <rect key="frame" x="-26" y="-28" width="420" height="420"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RW8-kY-dUS">
+                                <rect key="frame" x="20" y="257" width="374" height="489"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Thank you !  For using this app created by            Kara &quot;Woodbine&quot; Fraine">
+                                        <attributes>
+                                            <color key="NSColor" red="0.012808310794571788" green="0.0" blue="0.30278394670050757" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="57" name="HoeflerText-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XfB-LG-6aY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gmE-WZ-C6f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1600.0000000000002" y="65.625"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="fud-Sr-IVT"/>
+        <segue reference="SM7-fc-3lX"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="bunnies-19" width="1500" height="1282"/>
+        <image name="thebunnies-12" width="1489" height="1467"/>
+        <image name="thebunnies-13" width="1560" height="1478"/>
+        <image name="thebunnies-14" width="1594" height="1409"/>
+        <image name="thebunnies-16" width="1594" height="1497"/>
+        <image name="thebunnies-17" width="600" height="753"/>
+        <image name="thebunnies-18" width="900" height="1028"/>
+        <image name="thebunnies-2" width="1501" height="1500"/>
+        <image name="thebunnies-3" width="1501" height="1500"/>
+        <image name="thebunnies-4" width="1500" height="1501"/>
+        <image name="thebunnies-5" width="1501" height="1501"/>
+        <image name="thebunnies-6" width="1501" height="1501"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
